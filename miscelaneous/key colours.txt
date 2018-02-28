@@ -1,0 +1,4 @@
+body #DFD8D0
+black key #3A3A3A
+red key #A72D45
+display background #C3C2AB

@@ -1,0 +1,14 @@
+body {
+  background-color: #666;
+}
+
+div {
+  width: 380px;
+  height: 500px;
+  background-color: #faf5e4;
+  margin: 100px auto;
+  border-radius: 20px;
+  box-shadow: -10px -10px 30px rgba(0, 0, 0, 0.4) inset,
+                      10px 10px 30px rgba(0, 0, 0, 0.1) inset,
+                      10px 10px 50px rgba(0, 0, 0, 0.7);
+}
