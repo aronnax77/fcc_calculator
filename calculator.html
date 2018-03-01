@@ -1,0 +1,38 @@
+<!-- Author: Richard Myatt
+     Date: 1 March 2018
+
+     A styled version of the simple calculator
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/calculator.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FCC Calculator</title>
+</head>
+<body>
+  <div class="calc-body" id="app"> <!-- our Vue.js app link -->
+    <div class="display">
+      <div class="output">
+        <div class="string">
+          <p>{{ str }}</p>
+        </div>
+        <p class="result">{{ res }}</p>
+      </div>
+    </div>
+    <!-- make keypad with 50 x 50px keys in 4 x 5 grid -->
+    <div class="keypad">
+      <div class="key" :class="{alert: !clr}"
+                       v-for="(key, index) in keys"
+                       @click="handleKey(index)">{{ key }}</div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/vue@2.0.3/dist/vue.min.js"></script>
+  <script src="js/calculator.js"></script>
+
+</body>
+</html>
